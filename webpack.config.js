@@ -38,7 +38,4 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  env: {
-    node: true,
-  },
 };
