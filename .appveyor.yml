@@ -18,3 +18,13 @@ build_script:
 
 test_script:
   - npm run lint  # скрипт тестирования
+
+deploy_script:
+  - provider: GitHub
+    auth_token:
+      secure: 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
+    edge: true
+    cleanup: false
+    on:
+      branch: main
+    local_dir: dist
